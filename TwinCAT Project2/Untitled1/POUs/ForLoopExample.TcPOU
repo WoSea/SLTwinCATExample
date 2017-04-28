@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4020.12">
+  <POU Name="ForLoopExample" Id="{4737619c-c9ba-48cb-a6df-f2b18373a145}" SpecialFunc="None">
+    <Declaration><![CDATA[FUNCTION ForLoopExample : REAL
+VAR_INPUT
+END_VAR
+VAR_IN_OUT
+	MyArray : ARRAY [1..999] OF REAL;
+END_VAR
+VAR
+	Sum:REAL;
+	Index:INT;
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[Sum:=0;
+FOR Index :=1 TO 999 BY 1 DO
+	Sum := Sum + MyArray[Index];
+END_FOR
+ForLoopExample :=Sum / 999.0;]]></ST>
+    </Implementation>
+    <LineIds Name="ForLoopExample">
+      <LineId Id="14" Count="3" />
+      <LineId Id="7" Count="0" />
+    </LineIds>
+  </POU>
+</TcPlcObject>

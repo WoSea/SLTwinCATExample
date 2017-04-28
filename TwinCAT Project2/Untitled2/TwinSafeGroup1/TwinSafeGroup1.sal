@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<safetyApplication Crc="617649185" xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.1.0.0" name="" xmlns="http://schemas.microsoft.com/dsltools/SafetyApplicationLanguage">
+  <networks>
+    <safetyApplicationHasNetworks>
+      <Network name="Network1" networkName="Network1" />
+    </safetyApplicationHasNetworks>
+  </networks>
+</safetyApplication>
